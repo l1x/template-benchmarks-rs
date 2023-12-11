@@ -3,7 +3,7 @@ name = "template-benchmarks-rs"
 version = "0.1.1"
 authors = [
     "Dirkjan Ochtman <dirkjan@ochtman.nl>",
-    "Istvan Szukacs <istvan@datadeft.eu>", # maintainer of the current fork
+    "Istvan Szukacs <istvan@datadeft.eu>",  # maintainer of the current fork
 ]
 build = "src/build.rs"
 edition = "2021"
