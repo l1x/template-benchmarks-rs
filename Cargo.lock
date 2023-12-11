@@ -1132,6 +1132,25 @@ dependencies = [
 ]
 
 [[package]]
+name = "rusty-html"
+version = "0.1.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "d967a9f512099c557a50709ac96f4a19c49a195b84b980aa97330f47222eca0a"
+dependencies = [
+ "rusty-html-macros",
+]
+
+[[package]]
+name = "rusty-html-macros"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "9bc13d8341203f732e655800fba46bc42aff0d7d8982c13199f784e580bf7e7a"
+dependencies = [
+ "proc-macro2",
+ "quote",
+]
+
+[[package]]
 name = "ryu"
 version = "1.0.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1311,6 +1330,7 @@ dependencies = [
  "markup",
  "maud",
  "ructe",
+ "rusty-html",
  "sailfish",
  "sailfish-macros",
  "serde",
