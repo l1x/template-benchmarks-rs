@@ -1,3 +1,9 @@
+use template_benchmarks_rs::*;
+
+use criterion::criterion_group;
+use criterion::criterion_main;
+use criterion::Criterion;
+
 fn big_table(c: &mut Criterion) {
     let input = 100;
 
@@ -37,3 +43,6 @@ fn teams(c: &mut Criterion) {
 
     group.finish();
 }
+
+criterion_group!(benches, big_table, teams);
+criterion_main!(benches);

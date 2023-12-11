@@ -1,29 +1,32 @@
 [package]
 name = "template-benchmarks-rs"
-version = "0.1.0"
-authors = ["Dirkjan Ochtman <dirkjan@ochtman.nl>"]
+version = "0.1.1"
+authors = [
+    "Dirkjan Ochtman <dirkjan@ochtman.nl>",
+    "Istvan Szukacs <istvan@datadeft.eu>",
+]
 build = "src/build.rs"
 edition = "2021"
 
 [dependencies]
-askama = { git = "https://github.com/djc/askama", branch = "main" }
-criterion = { version = "0.4", features = ["html_reports"] }
-handlebars = { git = "https://github.com/sunng87/handlebars-rust" }
-horrorshow = { git = "https://github.com/Stebalien/horrorshow-rs" }
-liquid = { git = "https://github.com/cobalt-org/liquid-rust" }
-markup = { git = "https://github.com/utkarshkukreti/markup.rs" }
-sailfish = { git = "https://github.com/Kogia-sima/sailfish" }
-sailfish-macros = { git = "https://github.com/Kogia-sima/sailfish" }
-serde = "1"
-serde_derive = "1"
-serde_json = "1"
-serde_yaml = "0.9"
-tera = { git = "https://github.com/Keats/tera" }
-fomat-macros = { git = "https://github.com/krdln/fomat-macros" }
-maud = { git = "https://github.com/lambda-fairy/maud" }
+askama = { version = "0.12.1" }
+criterion = { version = "0.5.1", features = ["html_reports"] }
+handlebars = { version = "4.5.0" }
+horrorshow = { version = "0.8.4" }
+liquid = { version = "0.26.4" }
+markup = { version = "0.15.0" }
+sailfish = { version = "0.8.3" }
+sailfish-macros = { version = "0.8.3" }
+serde = "1.0.193"
+serde_derive = "1.0.193"
+serde_json = "1.0.108"
+serde_yaml = "0.9.27"
+tera = { version = "1.19.1" }
+fomat-macros = { version = "0.3.2" }
+maud = { version = "0.25.0" }
 
 [build-dependencies]
-ructe = { git = "https://github.com/kaj/ructe" }
+ructe = { version = "0.17.0" }
 
 [[bench]]
 name = "all"
