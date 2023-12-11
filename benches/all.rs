@@ -20,6 +20,7 @@ fn big_table(c: &mut Criterion) {
     group.bench_with_input("Sailfish", &input, sailfish::big_table);
     group.bench_with_input("Tera", &input, tera::big_table);
     group.bench_with_input("write", &input, std_write::big_table);
+    group.bench_with_input("rusty-html", &input, rusty_html::big_table);
 
     group.finish();
 }
@@ -40,6 +41,7 @@ fn teams(c: &mut Criterion) {
     group.bench_with_input("Sailfish", &input, sailfish::teams);
     group.bench_with_input("Tera", &input, tera::teams);
     group.bench_with_input("write", &input, std_write::teams);
+    group.bench_with_input("rusty-html", &input, rusty_html::teams);
 
     group.finish();
 }

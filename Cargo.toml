@@ -24,6 +24,7 @@ serde_yaml = "0.9.27"
 tera = { version = "1.19.1" }
 fomat-macros = { version = "0.3.2" }
 maud = { version = "0.25.0" }
+rusty-html = { version = "0.1.2" }
 
 [build-dependencies]
 ructe = { version = "0.17.0" }
